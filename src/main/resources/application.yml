@@ -1,0 +1,21 @@
+server:
+  error:
+    include-stacktrace: on_param
+  servlet:
+    context-path:
+  tomcat:
+    relaxed-query-chars: '|,{,},[,]'
+
+spring:
+  application:
+    name: todo-application
+  datasource:
+    url: jdbc:mysql://localhost:3306/task?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
