@@ -38,16 +38,17 @@ Build and run the application using Docker:
 ```bash
 docker compose up
 ```
-Wait the command finish its processes, and in another terminal tab, initate the npm:
+Wait for Docker to finish initializing all services.
+In a new terminal, navigate to the application directory and start the npm server:
 ```bash
 cd app
 npm start
 ```
-If you get any errors during the npm start, do this:
+If you encounter any errors related to missing dependencies, resolve them by installing react-scripts:
 ```bash
 npm install react-scripts --save
 ```
-And the run npm start again:
+After resolving dependencies, restart the application:
 ```bash
 npm start
 ```
