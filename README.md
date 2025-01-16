@@ -38,7 +38,7 @@ Build and run the application using Docker:
 ```bash
 docker compose up
 ```
-Then initate the npm:
+Wait the command finish its processes, and in another terminal tab, initate the npm:
 ```bash
 cd app
 npm start
@@ -46,6 +46,10 @@ npm start
 If you get any errors during the npm start, do this:
 ```bash
 npm install react-scripts --save
+```
+And the run npm start again:
+```bash
+npm start
 ```
 ## Folder Structure
 
